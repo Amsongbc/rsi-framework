@@ -16,12 +16,13 @@ import time
 
 REPO = Path(__file__).resolve().parents[1]
 DOUBLE = REPO / 'tests/doubles/upstream'
+ORIGINAL = REPO / 'pyrua-ewam-agent'
 PYTHON = sys.executable
 
 
 def make_workspace(base):
     projects = Path(base) / 'ws/projects'
-    shutil.copytree(REPO / 'projects', projects, ignore=shutil.ignore_patterns('__pycache__'))
+    shutil.copytree(ORIGINAL / 'projects', projects, ignore=shutil.ignore_patterns('__pycache__'))
     shutil.copytree(DOUBLE / 'PyRUA-Lean', projects / 'PyRUA-Lean', ignore=shutil.ignore_patterns('__pycache__'))
     shutil.copytree(DOUBLE / 'RoboDojo', projects / 'RoboDojo', ignore=shutil.ignore_patterns('__pycache__'))
     (projects / 'ewam_comparison/runtime_assets/Assets').mkdir(parents=True)
@@ -64,7 +65,7 @@ def environment(projects, extra=None):
 
 def window_config(projects, service_root, path):
     """The original example template rendered for the offline workspace; all lanes use one service."""
-    text = (REPO / 'configs/ewam_window_parallel24.example.json').read_text()
+    text = (ORIGINAL / 'configs/ewam_window_parallel24.example.json').read_text()
     config = json.loads(text.replace('${PROJECTS_ROOT}', str(projects)))
     for lane in config['lanes'].values():
         lane['service_root'] = str(service_root)

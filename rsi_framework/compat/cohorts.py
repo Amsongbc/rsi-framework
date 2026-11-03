@@ -33,7 +33,7 @@ COHORTS = {
         name='ewam_window_parallel24',
         role='Current-window controller: file queue, persistent Python namespace, explicit visual '
              'acknowledgement, full/sparse supervision, EWAM-first hybrid. Main compatibility target.',
-        config_template='configs/ewam_window_parallel24.example.json',
+        config_template='pyrua-ewam-agent/configs/ewam_window_parallel24.example.json',
         entries={
             'window_session': Entry('window_session.py', 'One episode driven by the window controller',
                                     ('--config', '--task', '--eval-seed', '--layout', '--out', '--variant', '--lane'),
@@ -75,7 +75,7 @@ COHORTS = {
     'ewam_doctor_integration': Cohort(
         name='ewam_doctor_integration',
         role='Historical API controller, proposal supervision, warmup experience and frozen harness.',
-        config_template='configs/ewam_doctor_integration.example.json',
+        config_template='pyrua-ewam-agent/configs/ewam_doctor_integration.example.json',
         entries={
             'run_episode': Entry('run_episode.py', 'One API-planned episode',
                                  ('--config', '--task', '--eval-seed', '--layout', '--out')),
@@ -90,7 +90,7 @@ COHORTS = {
     'ewam_doctor_validation72': Cohort(
         name='ewam_doctor_validation72',
         role='72-episode paired validation with crossed GPU lanes and predeclared statistics.',
-        config_template='configs/ewam_doctor_validation72.example.json',
+        config_template='pyrua-ewam-agent/configs/ewam_doctor_validation72.example.json',
         entries={
             'run_episode': Entry('run_episode.py', 'One API-planned episode',
                                  ('--config', '--task', '--eval-seed', '--layout', '--out')),
@@ -104,7 +104,7 @@ COHORTS = {
     'ewam_doctor_efficiency48': Cohort(
         name='ewam_doctor_efficiency48',
         role='2x2 efficiency ablation: sparse supervision x server context compaction.',
-        config_template='configs/ewam_doctor_efficiency48.example.json',
+        config_template='pyrua-ewam-agent/configs/ewam_doctor_efficiency48.example.json',
         entries={
             'run_episode': Entry('run_episode.py', 'One API-planned episode',
                                  ('--config', '--task', '--eval-seed', '--layout', '--out')),

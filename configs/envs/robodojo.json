@@ -8,10 +8,10 @@
     "perception_gpu": 1
   },
   "original": {
-    "window_config": "${REPO_ROOT}/configs/ewam_window_parallel24.local.json",
+    "window_config": "${ORIGINAL_ROOT}/configs/ewam_window_parallel24.local.json",
     "lane": "A",
-    "integration_config": "${REPO_ROOT}/configs/ewam_doctor_integration.local.json",
-    "validation72_config": "${REPO_ROOT}/configs/ewam_doctor_validation72.local.json",
-    "efficiency48_config": "${REPO_ROOT}/configs/ewam_doctor_efficiency48.local.json"
+    "integration_config": "${ORIGINAL_ROOT}/configs/ewam_doctor_integration.local.json",
+    "validation72_config": "${ORIGINAL_ROOT}/configs/ewam_doctor_validation72.local.json",
+    "efficiency48_config": "${ORIGINAL_ROOT}/configs/ewam_doctor_efficiency48.local.json"
   }
 }

@@ -1,7 +1,7 @@
 """What an original run needs before it starts, done automatically.
 
-- The private config: if configs/<cohort>.local.json is missing, it is rendered from
-  configs/<cohort>.example.json exactly like tools/render_config.py (same ${VAR} rule,
+- The private config: if pyrua-ewam-agent/configs/<cohort>.local.json is missing, it is
+  rendered from the .example.json next to it exactly like tools/render_config.py (same ${VAR} rule,
   new file, mode 0600). PROJECTS_ROOT defaults to projects/ of this repository.
 - The EWAM service: the root the original entry will use (window: the config's lane
   service_root; comparison: --service) is checked with a health call. If nothing

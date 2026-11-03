@@ -8,7 +8,7 @@ runs also check the projects/ files of the workspace they actually import.
 import json
 from pathlib import Path
 
-from rsi_framework import REPO_ROOT
+from rsi_framework import ORIGINAL_ROOT
 from rsi_framework.core.io import canonical_sha256, sha256_file
 
 MANIFEST = Path(__file__).with_name('original_manifest.json')
@@ -18,10 +18,10 @@ def load_manifest():
     return json.loads(MANIFEST.read_text())
 
 
-def check(root=REPO_ROOT, projects=None):
+def check(root=ORIGINAL_ROOT, projects=None):
     """Compare the original files with the manifest.
 
-    `root` is a full export (this repo). `projects`, if given, is a workspace
+    `root` is the full original export (pyrua-ewam-agent/). `projects`, if given, is a workspace
     projects/ directory whose cohort files are checked instead of root/projects.
     """
     manifest = load_manifest()
@@ -44,7 +44,7 @@ def check(root=REPO_ROOT, projects=None):
             'passed': not changed and not missing and fingerprint == manifest['fingerprint']}
 
 
-def require_unchanged(root=REPO_ROOT, projects=None):
+def require_unchanged(root=ORIGINAL_ROOT, projects=None):
     report = check(root, projects)
     if not report['passed']:
         raise RuntimeError('Original export changed; equivalence evidence no longer applies: '

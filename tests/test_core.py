@@ -12,7 +12,7 @@ from unittest import mock
 
 import numpy as np
 
-from rsi_framework import PROJECTS_DIR, REPO_ROOT
+from rsi_framework import ORIGINAL_ROOT, PROJECTS_DIR, REPO_ROOT
 from rsi_framework.compat import baseline, launch, original_suites, profiles
 from rsi_framework.core import compose, config, io
 from rsi_framework.core.registry import REGISTRY, Registry, load_builtin
@@ -86,7 +86,7 @@ class Core(unittest.TestCase):
         self.assertEqual(command[:2], ['/venv/bin/python', str(PROJECTS_DIR / 'ewam_window_parallel24/window_session.py')])
         default = compose.resolve({'env': 'robodojo', 'vla': 'ewam'})   # configs/*.local.json: rendered at launch
         self.assertEqual(default['services']['render']['target'],
-                         str(REPO_ROOT / 'configs/ewam_window_parallel24.local.json'))
+                         str(ORIGINAL_ROOT / 'configs/ewam_window_parallel24.local.json'))
         base = compose.resolve({'env': 'robodojo', 'vla': 'ewam', 'controller': 'none'})
         self.assertEqual(profiles.argv(base, {'task': 'push_T', 'eval_seed': 0, 'layout': 0}, '/o'),
                          ['--mode', 'baseline', '--task', 'push_T', '--layout', '0', '--eval-seed', '0', '--out', '/o',
@@ -135,11 +135,11 @@ class Core(unittest.TestCase):
     def test_missing_local_config_is_rendered_like_the_original_tool(self):
         from rsi_framework.compat import services
         import subprocess
-        template = REPO_ROOT / 'configs/ewam_window_parallel24.example.json'
+        template = ORIGINAL_ROOT / 'configs/ewam_window_parallel24.example.json'
         ours, theirs = Path(self.temp.name) / 'a.local.json', Path(self.temp.name) / 'b.local.json'
         with mock.patch.dict(os.environ, {'PROJECTS_ROOT': '/work/projects'}):
             services.render_config(template, ours)
-            subprocess.run([sys.executable, str(REPO_ROOT / 'tools/render_config.py'), str(template), str(theirs)],
+            subprocess.run([sys.executable, str(ORIGINAL_ROOT / 'tools/render_config.py'), str(template), str(theirs)],
                            check=True, env=dict(os.environ))
             with self.assertRaises(FileExistsError):
                 services.render_config(template, ours)

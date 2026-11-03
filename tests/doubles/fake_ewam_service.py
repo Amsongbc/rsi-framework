@@ -21,7 +21,7 @@ import traceback
 import numpy as np
 
 REPO = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(REPO / 'projects/ewam_comparison'))
+sys.path.insert(0, str(REPO / 'pyrua-ewam-agent/projects/ewam_comparison'))
 from ewam_service import public_observation  # noqa: E402
 
 ARMS = ('left', 'right')

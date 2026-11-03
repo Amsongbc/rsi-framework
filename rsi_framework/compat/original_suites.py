@@ -13,7 +13,7 @@ import subprocess
 import sys
 import tempfile
 
-from rsi_framework import PROJECTS_DIR, REPO_ROOT
+from rsi_framework import ORIGINAL_ROOT, PROJECTS_DIR, REPO_ROOT
 
 DOUBLE = REPO_ROOT / 'tests/doubles/upstream'
 
@@ -29,7 +29,7 @@ SUITES = [
 
 
 def _render_config(cohort, projects, key_file):
-    template = REPO_ROOT / 'configs' / f'{cohort}.example.json'
+    template = ORIGINAL_ROOT / 'configs' / f'{cohort}.example.json'
     text = template.read_text().replace('${PROJECTS_ROOT}', str(projects)).replace('${API_KEY_FILE}', str(key_file))
     (projects / cohort / 'experiment_config.json').write_text(text)
     return json.loads(text)

@@ -166,7 +166,7 @@ def main(argv=None):
             started = services.prepare(profile, start=not a.no_start_services)
             args = profiles.argv(profile, case, a.out)
             if compat['cohort'] == 'ewam_window_parallel24':
-                print(f"controller: python projects/ewam_window_parallel24/window_control.py --session {a.out} "
+                print(f"controller: python pyrua-ewam-agent/projects/ewam_window_parallel24/window_control.py --session {a.out} "
                       "--note '<what you see>' python --file cell.py", flush=True)
             try:
                 if compat.get('implementation', 'original') == 'modular':

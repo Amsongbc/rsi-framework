@@ -7,7 +7,7 @@ block-built where available (modular). The entry's own arguments come from
 """
 from pathlib import Path
 
-from rsi_framework import REPO_ROOT
+from rsi_framework import ORIGINAL_ROOT
 import dataclasses
 
 ORIGINAL_ARGS = {'config': 'config', 'lane': 'lane', 'sim_gpu': 'sim_gpu', 'perception_gpu': 'perception_gpu',
@@ -83,7 +83,7 @@ def to_compat(preset, profile, implementation):
     if missing:
         raise ValueError(f'{preset.name} needs original arguments: ' + ', '.join('--' + k.replace('_', '-') for k in missing))
     render = None
-    template = REPO_ROOT / 'configs' / f'{preset.cohort}.example.json'
+    template = ORIGINAL_ROOT / 'configs' / f'{preset.cohort}.example.json'
     if 'config' in given and not Path(given['config']).is_file():
         if not (str(given['config']).endswith('.local.json') and template.is_file()):
             raise ValueError(f'{preset.name}: original config {given["config"]} does not exist')

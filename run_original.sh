@@ -4,11 +4,11 @@
 #   ./run_original.sh sparse      window experiment, sparse supervision
 #   ./run_original.sh baseline    pure EWAM baseline
 # More flags go to `python -m rsi_framework run`, e.g. ./run_original.sh --layout 11
-# First run renders configs/*.local.json from the templates; a missing EWAM service is
+# First run renders pyrua-ewam-agent/configs/*.local.json from the templates; a missing EWAM service is
 # started and stopped afterwards. Change the task in configs/envs/robodojo.json.
 set -euo pipefail
 cd "$(dirname "$0")"
-export PROJECTS_ROOT="${PROJECTS_ROOT:-$PWD/projects}"
+export PROJECTS_ROOT="${PROJECTS_ROOT:-$PWD/pyrua-ewam-agent/projects}"
 export EWAM_PYTHON="${EWAM_PYTHON:-$PROJECTS_ROOT/ewam_comparison/.venv-ewam/bin/python}"
 if [ ! -x "$EWAM_PYTHON" ]; then
   echo "EWAM python not found at $EWAM_PYTHON; set EWAM_PYTHON (see README.md)" >&2
