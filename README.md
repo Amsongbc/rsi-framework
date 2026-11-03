@@ -1,7 +1,6 @@
 # RSI Framework
 
-可组合的机器人自改进（RSI）框架。环境、机器人、VLA、决策者（LLM）、Memory、训练都是插件，按名字组合运行。基于 PyRUA + EWAM(https://github.com/changyicheng1234/pyrua-ewam-agent)，原库完整保留在 (pyrua-ewam-agent/)。
-
+可组合的机器人自改进（RSI）框架。环境、机器人、VLA、决策者（LLM）、Memory、训练都是插件，按名字组合运行。基于 [PyRUA + EWAM](https://github.com/changyicheng1234/pyrua-ewam-agent)，原库完整保留在 [`pyrua-ewam-agent/`](pyrua-ewam-agent/)。
 ```
 观察 → 决策（LLM / 无） → 动作（VLA / 工具） → 执行 → 记经验（Memory） → 更新模型（VLA 训练） → 发布
 ```
