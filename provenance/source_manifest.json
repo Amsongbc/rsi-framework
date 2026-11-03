@@ -1,0 +1,442 @@
+[
+  {
+    "original": "ewam_comparison/audit_pairs.py",
+    "original_sha256": "4817a3b1a44fa88a4512cc579590a9888a1ad5861a73136c8718685f65dcf24a",
+    "original_object": "provenance/original_sources/4817a3b1a44fa88a4512cc579590a9888a1ad5861a73136c8718685f65dcf24a.py",
+    "export": "projects/ewam_comparison/audit_pairs.py",
+    "export_sha256": "11b700099f4fb3711847fce08a9bd05113a2f7a320bb58c8212cd6e2467544de",
+    "changes": "PROJECTS_ROOT portability import/path resolution; original content retained separately"
+  },
+  {
+    "original": "ewam_comparison/control.py",
+    "original_sha256": "aeea3a2f3e4efcebd9b714ed9842f3a626f7de10c67a86e2eed6ddc76ae2b365",
+    "original_object": "provenance/original_sources/aeea3a2f3e4efcebd9b714ed9842f3a626f7de10c67a86e2eed6ddc76ae2b365.py",
+    "export": "projects/ewam_comparison/control.py",
+    "export_sha256": "03498d00644f144594074251ad08cb8b706ddd6902ad12936549e2ecceaa888d",
+    "changes": "PROJECTS_ROOT portability import/path resolution; original content retained separately"
+  },
+  {
+    "original": "ewam_comparison/ewam_service.py",
+    "original_sha256": "400cf31035ce7dff2f3ddca1e9312342010cd0fb5a0be0344a5b197a6a141a3b",
+    "original_object": "provenance/original_sources/400cf31035ce7dff2f3ddca1e9312342010cd0fb5a0be0344a5b197a6a141a3b.py",
+    "export": "projects/ewam_comparison/ewam_service.py",
+    "export_sha256": "c35f7e0ef81bf9477ca7ccb8da422e3ab8487c9edb4b735c7731b4e46d84d42a",
+    "changes": "PROJECTS_ROOT portability import/path resolution; original content retained separately"
+  },
+  {
+    "original": "ewam_comparison/prepare_runtime_assets.py",
+    "original_sha256": "87cb7c61f04cb3ac27655c7be1d0becea699c6a8ba56e00cd71332f6fd180e4c",
+    "original_object": "provenance/original_sources/87cb7c61f04cb3ac27655c7be1d0becea699c6a8ba56e00cd71332f6fd180e4c.py",
+    "export": "projects/ewam_comparison/prepare_runtime_assets.py",
+    "export_sha256": "f4301d816682b37630320438a523eb93e3105b7e3cc40bd4758d62f6f5c13165",
+    "changes": "PROJECTS_ROOT portability import/path resolution; original content retained separately"
+  },
+  {
+    "original": "ewam_comparison/run_sequence.py",
+    "original_sha256": "0e1aeea84462da5cf050981b71a647363e028bff7ffbe71464be9387257dd6e6",
+    "original_object": "provenance/original_sources/0e1aeea84462da5cf050981b71a647363e028bff7ffbe71464be9387257dd6e6.py",
+    "export": "projects/ewam_comparison/run_sequence.py",
+    "export_sha256": "4a46d993664f34a35c4d41a2d1e4c8f241ba9e83c2abc08a17cb18a21882443c",
+    "changes": "PROJECTS_ROOT portability import/path resolution; original content retained separately"
+  },
+  {
+    "original": "ewam_comparison/session.py",
+    "original_sha256": "8e02ba12bdaa1c727b6cac012a4c6ff8b5d9db1b15bdb470e3e17c26562e8b9e",
+    "original_object": "provenance/original_sources/8e02ba12bdaa1c727b6cac012a4c6ff8b5d9db1b15bdb470e3e17c26562e8b9e.py",
+    "export": "projects/ewam_comparison/session.py",
+    "export_sha256": "09af693a9c2c4f51e38434f11a0d35252725ed5dba42073849fb61c32bb27662",
+    "changes": "PROJECTS_ROOT portability import/path resolution; original content retained separately"
+  },
+  {
+    "original": "ewam_comparison/smoke_ewam.py",
+    "original_sha256": "843802650af90cec9bd7a8302360a7fcaf21eee43db9fe7538d419b262d5c451",
+    "original_object": "provenance/original_sources/843802650af90cec9bd7a8302360a7fcaf21eee43db9fe7538d419b262d5c451.py",
+    "export": "projects/ewam_comparison/smoke_ewam.py",
+    "export_sha256": "916fcdce417bc6aabef63d115d5c2e4cc1ecd8f3d0a05a6b8d675716a2a954be",
+    "changes": "PROJECTS_ROOT portability import/path resolution; original content retained separately"
+  },
+  {
+    "original": "ewam_comparison/smoke_sam3.py",
+    "original_sha256": "86ba7d609715f2f71d8edb32ab2abcb6d190bb988a2723ba75aea502bdcf85ca",
+    "original_object": "provenance/original_sources/86ba7d609715f2f71d8edb32ab2abcb6d190bb988a2723ba75aea502bdcf85ca.py",
+    "export": "projects/ewam_comparison/smoke_sam3.py",
+    "export_sha256": "028ebf3007326f91937fdc8bf4327b69b0bb903bf8d4345ab3debe5e1f7c0616",
+    "changes": "PROJECTS_ROOT portability import/path resolution; original content retained separately"
+  },
+  {
+    "original": "ewam_comparison/smoke_sim.py",
+    "original_sha256": "e2218aafa37c1d7e3422a0040ed35b0ee0495e8fd35e02fcc4587f29a11ab2d9",
+    "original_object": "provenance/original_sources/e2218aafa37c1d7e3422a0040ed35b0ee0495e8fd35e02fcc4587f29a11ab2d9.py",
+    "export": "projects/ewam_comparison/smoke_sim.py",
+    "export_sha256": "45d3dbe9d994be743ea509a62eb95f24823f5741541964e3013da1699d32ae2a",
+    "changes": "PROJECTS_ROOT portability import/path resolution; original content retained separately"
+  },
+  {
+    "original": "ewam_comparison/summarize.py",
+    "original_sha256": "5ff452d4b1994158542c207b1fc837dc690371bbb91aff817de38b1d0c258ed3",
+    "original_object": "provenance/original_sources/5ff452d4b1994158542c207b1fc837dc690371bbb91aff817de38b1d0c258ed3.py",
+    "export": "projects/ewam_comparison/summarize.py",
+    "export_sha256": "24bb57c4b6c9236ff324e0e317bac0690583e43042455e17b8f2e822cd3beb32",
+    "changes": "PROJECTS_ROOT portability import/path resolution; original content retained separately"
+  },
+  {
+    "original": "ewam_comparison/test_episode_contract.py",
+    "original_sha256": "79c0cb050c4238ce1dd848cb3f2eac4038895fd27a30ebc60f96e78d187f9004",
+    "original_object": "provenance/original_sources/79c0cb050c4238ce1dd848cb3f2eac4038895fd27a30ebc60f96e78d187f9004.py",
+    "export": "projects/ewam_comparison/test_episode_contract.py",
+    "export_sha256": "964a37f45603043194b1e4af564044c06f31978f62bc3102168ddb57cc134038",
+    "changes": "PROJECTS_ROOT portability import/path resolution; original content retained separately"
+  },
+  {
+    "original": "ewam_doctor_integration/analyze_study.py",
+    "original_sha256": "df133c8b9fcc0ca9f4e4791ca1522552fa86ad27be882770f777258de9e9e4b3",
+    "original_object": "provenance/original_sources/df133c8b9fcc0ca9f4e4791ca1522552fa86ad27be882770f777258de9e9e4b3.py",
+    "export": "projects/ewam_doctor_integration/analyze_study.py",
+    "export_sha256": "cc97f8dc14bdd1574f78d5e8fffb9fbe9d4df9c220263ef0b3de4614aeb01873",
+    "changes": "PROJECTS_ROOT portability import/path resolution; original content retained separately"
+  },
+  {
+    "original": "ewam_doctor_integration/api_transport.py",
+    "original_sha256": "689ef3a5ad0895f2b985a124062f2c5c6ad8e7b4264a3cd4d285063dc55cc65b",
+    "original_object": "provenance/original_sources/689ef3a5ad0895f2b985a124062f2c5c6ad8e7b4264a3cd4d285063dc55cc65b.py",
+    "export": "projects/ewam_doctor_integration/api_transport.py",
+    "export_sha256": "3860aa31ae37e8a3b728a4cfe77a9dc477a3680cebf578099a18def39157839b",
+    "changes": "PROJECTS_ROOT portability import/path resolution; original content retained separately"
+  },
+  {
+    "original": "ewam_doctor_integration/audit_study.py",
+    "original_sha256": "ab59a95ebe40a0750834970b0fbfde6f58fef26edb4541548e56404fa65a3c53",
+    "original_object": "provenance/original_sources/ab59a95ebe40a0750834970b0fbfde6f58fef26edb4541548e56404fa65a3c53.py",
+    "export": "projects/ewam_doctor_integration/audit_study.py",
+    "export_sha256": "07333c9bda07e33e4eba3d35d2f89a78048484f9d5b404d2942cb14faa9a697e",
+    "changes": "PROJECTS_ROOT portability import/path resolution; original content retained separately"
+  },
+  {
+    "original": "ewam_doctor_integration/doctor_robot.py",
+    "original_sha256": "e26066d688b206d868e96d4e8783c934e584359de4ed11d384b188878fd9970d",
+    "original_object": "provenance/original_sources/e26066d688b206d868e96d4e8783c934e584359de4ed11d384b188878fd9970d.py",
+    "export": "projects/ewam_doctor_integration/doctor_robot.py",
+    "export_sha256": "4c8be66bdc31689a5fe7114f7c5004f937574759c681aa4c55eff5dd97a668a4",
+    "changes": "PROJECTS_ROOT portability import/path resolution; original content retained separately"
+  },
+  {
+    "original": "ewam_doctor_integration/hybrid_robot.py",
+    "original_sha256": "0e880238b8e943d3c93607c84580ce9e3d97440325c10bbb358a27c9867e5032",
+    "original_object": "provenance/original_sources/0e880238b8e943d3c93607c84580ce9e3d97440325c10bbb358a27c9867e5032.py",
+    "export": "projects/ewam_doctor_integration/hybrid_robot.py",
+    "export_sha256": "4aa69ace1efc14644c6527888e68e15b889fc236b04b2e4d08997383150f5923",
+    "changes": "PROJECTS_ROOT portability import/path resolution; original content retained separately"
+  },
+  {
+    "original": "ewam_doctor_integration/learning.py",
+    "original_sha256": "137ec453a80350ba114e83339476893f66adafa5eb4c91cb3636c44dadb566bf",
+    "original_object": "provenance/original_sources/137ec453a80350ba114e83339476893f66adafa5eb4c91cb3636c44dadb566bf.py",
+    "export": "projects/ewam_doctor_integration/learning.py",
+    "export_sha256": "ba92c433152a1440d134a64136c4c7b1ca3fd70abc458567cdb2f2d51d64c3a1",
+    "changes": "PROJECTS_ROOT portability import/path resolution; original content retained separately"
+  },
+  {
+    "original": "ewam_doctor_integration/recording.py",
+    "original_sha256": "c9a1fd015b98fa82634e65ccf53480f93944f3a6bcb372c846e7f9af8ca7f320",
+    "original_object": "provenance/original_sources/c9a1fd015b98fa82634e65ccf53480f93944f3a6bcb372c846e7f9af8ca7f320.py",
+    "export": "projects/ewam_doctor_integration/recording.py",
+    "export_sha256": "d62f6295d197b39386a54f52e0245cecceb48af4c24215954122b465b3b7f8c1",
+    "changes": "PROJECTS_ROOT portability import/path resolution; original content retained separately"
+  },
+  {
+    "original": "ewam_doctor_integration/run_episode.py",
+    "original_sha256": "0c09143c0b9fb4e0b08e8d055b53910770bfd5c9af5b487f98eacf5d1923647d",
+    "original_object": "provenance/original_sources/0c09143c0b9fb4e0b08e8d055b53910770bfd5c9af5b487f98eacf5d1923647d.py",
+    "export": "projects/ewam_doctor_integration/run_episode.py",
+    "export_sha256": "c9437c211352d556e5a461bc20082a1195d068865a8108857492094b39d1cefd",
+    "changes": "PROJECTS_ROOT portability import/path resolution; original content retained separately"
+  },
+  {
+    "original": "ewam_doctor_integration/run_study.py",
+    "original_sha256": "0e5c215b4fe4a9f07ec716d4a61482195058275e42d05c86c548eb050252e6cb",
+    "original_object": "provenance/original_sources/0e5c215b4fe4a9f07ec716d4a61482195058275e42d05c86c548eb050252e6cb.py",
+    "export": "projects/ewam_doctor_integration/run_study.py",
+    "export_sha256": "c00850a7e799be7b91be14a6ad8a2f20c9d85d6ae1834f094a553636902a5b9a",
+    "changes": "PROJECTS_ROOT portability import/path resolution; original content retained separately"
+  },
+  {
+    "original": "ewam_doctor_integration/test_doctor.py",
+    "original_sha256": "3eee860c2ac91fc070d1e56d0b2a16958fe647728772a86ca8bea272554cecae",
+    "original_object": "provenance/original_sources/3eee860c2ac91fc070d1e56d0b2a16958fe647728772a86ca8bea272554cecae.py",
+    "export": "projects/ewam_doctor_integration/test_doctor.py",
+    "export_sha256": "c8225e517b1c53011e48bd37839b623af73e1d0b6c59511450e86e2c108b5164",
+    "changes": "PROJECTS_ROOT portability import/path resolution; original content retained separately"
+  },
+  {
+    "original": "ewam_doctor_validation72/analyze_validation.py",
+    "original_sha256": "df6acbeab4c180d0e6d724ecddbbf9b51d3e688d3830261579b2a9c2ee60f12c",
+    "original_object": "provenance/original_sources/df6acbeab4c180d0e6d724ecddbbf9b51d3e688d3830261579b2a9c2ee60f12c.py",
+    "export": "projects/ewam_doctor_validation72/analyze_validation.py",
+    "export_sha256": "523123761ac5ff88f9af15022c704f243c1c86af7dc401a09f0d9486473315bb",
+    "changes": "PROJECTS_ROOT portability import/path resolution; original content retained separately"
+  },
+  {
+    "original": "ewam_doctor_validation72/api_transport.py",
+    "original_sha256": "689ef3a5ad0895f2b985a124062f2c5c6ad8e7b4264a3cd4d285063dc55cc65b",
+    "original_object": "provenance/original_sources/689ef3a5ad0895f2b985a124062f2c5c6ad8e7b4264a3cd4d285063dc55cc65b.py",
+    "export": "projects/ewam_doctor_validation72/api_transport.py",
+    "export_sha256": "3860aa31ae37e8a3b728a4cfe77a9dc477a3680cebf578099a18def39157839b",
+    "changes": "PROJECTS_ROOT portability import/path resolution; original content retained separately"
+  },
+  {
+    "original": "ewam_doctor_validation72/audit_study.py",
+    "original_sha256": "ab59a95ebe40a0750834970b0fbfde6f58fef26edb4541548e56404fa65a3c53",
+    "original_object": "provenance/original_sources/ab59a95ebe40a0750834970b0fbfde6f58fef26edb4541548e56404fa65a3c53.py",
+    "export": "projects/ewam_doctor_validation72/audit_study.py",
+    "export_sha256": "07333c9bda07e33e4eba3d35d2f89a78048484f9d5b404d2942cb14faa9a697e",
+    "changes": "PROJECTS_ROOT portability import/path resolution; original content retained separately"
+  },
+  {
+    "original": "ewam_doctor_validation72/doctor_robot.py",
+    "original_sha256": "e26066d688b206d868e96d4e8783c934e584359de4ed11d384b188878fd9970d",
+    "original_object": "provenance/original_sources/e26066d688b206d868e96d4e8783c934e584359de4ed11d384b188878fd9970d.py",
+    "export": "projects/ewam_doctor_validation72/doctor_robot.py",
+    "export_sha256": "4c8be66bdc31689a5fe7114f7c5004f937574759c681aa4c55eff5dd97a668a4",
+    "changes": "PROJECTS_ROOT portability import/path resolution; original content retained separately"
+  },
+  {
+    "original": "ewam_doctor_validation72/hybrid_robot.py",
+    "original_sha256": "0e880238b8e943d3c93607c84580ce9e3d97440325c10bbb358a27c9867e5032",
+    "original_object": "provenance/original_sources/0e880238b8e943d3c93607c84580ce9e3d97440325c10bbb358a27c9867e5032.py",
+    "export": "projects/ewam_doctor_validation72/hybrid_robot.py",
+    "export_sha256": "4aa69ace1efc14644c6527888e68e15b889fc236b04b2e4d08997383150f5923",
+    "changes": "PROJECTS_ROOT portability import/path resolution; original content retained separately"
+  },
+  {
+    "original": "ewam_doctor_validation72/learning.py",
+    "original_sha256": "137ec453a80350ba114e83339476893f66adafa5eb4c91cb3636c44dadb566bf",
+    "original_object": "provenance/original_sources/137ec453a80350ba114e83339476893f66adafa5eb4c91cb3636c44dadb566bf.py",
+    "export": "projects/ewam_doctor_validation72/learning.py",
+    "export_sha256": "ba92c433152a1440d134a64136c4c7b1ca3fd70abc458567cdb2f2d51d64c3a1",
+    "changes": "PROJECTS_ROOT portability import/path resolution; original content retained separately"
+  },
+  {
+    "original": "ewam_doctor_validation72/metrics.py",
+    "original_sha256": "20b9a555eaee20b0bd128448d8be334d12aa530dbfc432b15e9b898ff4905701",
+    "original_object": "provenance/original_sources/20b9a555eaee20b0bd128448d8be334d12aa530dbfc432b15e9b898ff4905701.py",
+    "export": "projects/ewam_doctor_validation72/metrics.py",
+    "export_sha256": "5262d7940ecee90c754516c7c4a259c1cbefe96c425a30db8b2c076e80d3d5f5",
+    "changes": "PROJECTS_ROOT portability import/path resolution; original content retained separately"
+  },
+  {
+    "original": "ewam_doctor_validation72/recording.py",
+    "original_sha256": "c9a1fd015b98fa82634e65ccf53480f93944f3a6bcb372c846e7f9af8ca7f320",
+    "original_object": "provenance/original_sources/c9a1fd015b98fa82634e65ccf53480f93944f3a6bcb372c846e7f9af8ca7f320.py",
+    "export": "projects/ewam_doctor_validation72/recording.py",
+    "export_sha256": "d62f6295d197b39386a54f52e0245cecceb48af4c24215954122b465b3b7f8c1",
+    "changes": "PROJECTS_ROOT portability import/path resolution; original content retained separately"
+  },
+  {
+    "original": "ewam_doctor_validation72/run_episode.py",
+    "original_sha256": "0c09143c0b9fb4e0b08e8d055b53910770bfd5c9af5b487f98eacf5d1923647d",
+    "original_object": "provenance/original_sources/0c09143c0b9fb4e0b08e8d055b53910770bfd5c9af5b487f98eacf5d1923647d.py",
+    "export": "projects/ewam_doctor_validation72/run_episode.py",
+    "export_sha256": "c9437c211352d556e5a461bc20082a1195d068865a8108857492094b39d1cefd",
+    "changes": "PROJECTS_ROOT portability import/path resolution; original content retained separately"
+  },
+  {
+    "original": "ewam_doctor_validation72/run_validation.py",
+    "original_sha256": "95d069788c4bfdf6123db94396444a23baee3b6e4d6581b4e74c6f5c6fad52bf",
+    "original_object": "provenance/original_sources/95d069788c4bfdf6123db94396444a23baee3b6e4d6581b4e74c6f5c6fad52bf.py",
+    "export": "projects/ewam_doctor_validation72/run_validation.py",
+    "export_sha256": "c326c25690767107f344e11e14a69a92db169d5f83490fa725edadcb182a4ab1",
+    "changes": "PROJECTS_ROOT portability import/path resolution; original content retained separately"
+  },
+  {
+    "original": "ewam_doctor_validation72/study_plan.py",
+    "original_sha256": "7e6076b62c75169854c45e4e2537d26fe51f0797a29526a638ebb9ddc3841657",
+    "original_object": "provenance/original_sources/7e6076b62c75169854c45e4e2537d26fe51f0797a29526a638ebb9ddc3841657.py",
+    "export": "projects/ewam_doctor_validation72/study_plan.py",
+    "export_sha256": "d21df135fa44d0dd4b6d2699acbb2496eab44af87b1a163147d56570912bfdae",
+    "changes": "PROJECTS_ROOT portability import/path resolution; original content retained separately"
+  },
+  {
+    "original": "ewam_doctor_validation72/test_doctor.py",
+    "original_sha256": "3eee860c2ac91fc070d1e56d0b2a16958fe647728772a86ca8bea272554cecae",
+    "original_object": "provenance/original_sources/3eee860c2ac91fc070d1e56d0b2a16958fe647728772a86ca8bea272554cecae.py",
+    "export": "projects/ewam_doctor_validation72/test_doctor.py",
+    "export_sha256": "c8225e517b1c53011e48bd37839b623af73e1d0b6c59511450e86e2c108b5164",
+    "changes": "PROJECTS_ROOT portability import/path resolution; original content retained separately"
+  },
+  {
+    "original": "ewam_doctor_efficiency48/analyze_efficiency.py",
+    "original_sha256": "5a05b299e61ae0b014954828bd8ed73c1b05e0a50886d18950fcd6a6899b9332",
+    "original_object": "provenance/original_sources/5a05b299e61ae0b014954828bd8ed73c1b05e0a50886d18950fcd6a6899b9332.py",
+    "export": "projects/ewam_doctor_efficiency48/analyze_efficiency.py",
+    "export_sha256": "b34d667474cb75a20689df5ea9861ec4bd7d43e0fcf4d3631e1dcdedbb923632",
+    "changes": "PROJECTS_ROOT portability import/path resolution; original content retained separately"
+  },
+  {
+    "original": "ewam_doctor_efficiency48/api_preflight.py",
+    "original_sha256": "fc039bf1aba7fec3c50fe9617a5eb2d8f44a6fe49220642c60349f776cc7bd36",
+    "original_object": "provenance/original_sources/fc039bf1aba7fec3c50fe9617a5eb2d8f44a6fe49220642c60349f776cc7bd36.py",
+    "export": "projects/ewam_doctor_efficiency48/api_preflight.py",
+    "export_sha256": "3ed6614cb3c492a9b4baf14f0755cf9198b5de2d4ef9ac4df401f80412a39570",
+    "changes": "PROJECTS_ROOT portability import/path resolution; original content retained separately"
+  },
+  {
+    "original": "ewam_doctor_efficiency48/api_transport.py",
+    "original_sha256": "3872c171bf6ee0466869f602d43a2c652ab996fb304690a56a4b6195236fd698",
+    "original_object": "provenance/original_sources/3872c171bf6ee0466869f602d43a2c652ab996fb304690a56a4b6195236fd698.py",
+    "export": "projects/ewam_doctor_efficiency48/api_transport.py",
+    "export_sha256": "8b3e42aec80367752fb1de2dde760a89df34aa3ba5b1c21e28a8f6b0f3dc5ad2",
+    "changes": "PROJECTS_ROOT portability import/path resolution; original content retained separately"
+  },
+  {
+    "original": "ewam_doctor_efficiency48/audit_study.py",
+    "original_sha256": "9051fef9716a9aeda834bdd605c8152494f586a0716232cf1368eaebbe59fea8",
+    "original_object": "provenance/original_sources/9051fef9716a9aeda834bdd605c8152494f586a0716232cf1368eaebbe59fea8.py",
+    "export": "projects/ewam_doctor_efficiency48/audit_study.py",
+    "export_sha256": "ca7119851e9d875b0aba6b96c6214e523b03c64392d0c47d47b1b3eb16b88a70",
+    "changes": "PROJECTS_ROOT portability import/path resolution; original content retained separately"
+  },
+  {
+    "original": "ewam_doctor_efficiency48/doctor_robot.py",
+    "original_sha256": "3ed5a3757fdaa2adb270e72869436a74f67ae141afe85e709dc8c8ba77b701fa",
+    "original_object": "provenance/original_sources/3ed5a3757fdaa2adb270e72869436a74f67ae141afe85e709dc8c8ba77b701fa.py",
+    "export": "projects/ewam_doctor_efficiency48/doctor_robot.py",
+    "export_sha256": "77f33811bbe2c67c9587e8b7a55e0ee9e12155166cc0311662f9d59c823e22ad",
+    "changes": "PROJECTS_ROOT portability import/path resolution; original content retained separately"
+  },
+  {
+    "original": "ewam_doctor_efficiency48/hybrid_robot.py",
+    "original_sha256": "0e880238b8e943d3c93607c84580ce9e3d97440325c10bbb358a27c9867e5032",
+    "original_object": "provenance/original_sources/0e880238b8e943d3c93607c84580ce9e3d97440325c10bbb358a27c9867e5032.py",
+    "export": "projects/ewam_doctor_efficiency48/hybrid_robot.py",
+    "export_sha256": "4aa69ace1efc14644c6527888e68e15b889fc236b04b2e4d08997383150f5923",
+    "changes": "PROJECTS_ROOT portability import/path resolution; original content retained separately"
+  },
+  {
+    "original": "ewam_doctor_efficiency48/learning.py",
+    "original_sha256": "137ec453a80350ba114e83339476893f66adafa5eb4c91cb3636c44dadb566bf",
+    "original_object": "provenance/original_sources/137ec453a80350ba114e83339476893f66adafa5eb4c91cb3636c44dadb566bf.py",
+    "export": "projects/ewam_doctor_efficiency48/learning.py",
+    "export_sha256": "ba92c433152a1440d134a64136c4c7b1ca3fd70abc458567cdb2f2d51d64c3a1",
+    "changes": "PROJECTS_ROOT portability import/path resolution; original content retained separately"
+  },
+  {
+    "original": "ewam_doctor_efficiency48/metrics.py",
+    "original_sha256": "20b9a555eaee20b0bd128448d8be334d12aa530dbfc432b15e9b898ff4905701",
+    "original_object": "provenance/original_sources/20b9a555eaee20b0bd128448d8be334d12aa530dbfc432b15e9b898ff4905701.py",
+    "export": "projects/ewam_doctor_efficiency48/metrics.py",
+    "export_sha256": "5262d7940ecee90c754516c7c4a259c1cbefe96c425a30db8b2c076e80d3d5f5",
+    "changes": "PROJECTS_ROOT portability import/path resolution; original content retained separately"
+  },
+  {
+    "original": "ewam_doctor_efficiency48/recording.py",
+    "original_sha256": "c9a1fd015b98fa82634e65ccf53480f93944f3a6bcb372c846e7f9af8ca7f320",
+    "original_object": "provenance/original_sources/c9a1fd015b98fa82634e65ccf53480f93944f3a6bcb372c846e7f9af8ca7f320.py",
+    "export": "projects/ewam_doctor_efficiency48/recording.py",
+    "export_sha256": "d62f6295d197b39386a54f52e0245cecceb48af4c24215954122b465b3b7f8c1",
+    "changes": "PROJECTS_ROOT portability import/path resolution; original content retained separately"
+  },
+  {
+    "original": "ewam_doctor_efficiency48/run_episode.py",
+    "original_sha256": "eafc05eaf69a33e1819f6b0110cf6960e767f76eed672ec50fb3b02f03e3763c",
+    "original_object": "provenance/original_sources/eafc05eaf69a33e1819f6b0110cf6960e767f76eed672ec50fb3b02f03e3763c.py",
+    "export": "projects/ewam_doctor_efficiency48/run_episode.py",
+    "export_sha256": "cddcab482eba08462b84a4883c41d5ee2a174ba45a735ca9ffa066315632568d",
+    "changes": "PROJECTS_ROOT portability import/path resolution; original content retained separately"
+  },
+  {
+    "original": "ewam_doctor_efficiency48/run_validation.py",
+    "original_sha256": "5f7e41736634b7e8178fb416c473d0dc3241d4190d517a9d3fe6d8f264f92778",
+    "original_object": "provenance/original_sources/5f7e41736634b7e8178fb416c473d0dc3241d4190d517a9d3fe6d8f264f92778.py",
+    "export": "projects/ewam_doctor_efficiency48/run_validation.py",
+    "export_sha256": "9f30b99c0fe8807580a572f1a4bc46a59b65f1d166faaf93ec17fc331cebedf1",
+    "changes": "PROJECTS_ROOT portability import/path resolution; original content retained separately"
+  },
+  {
+    "original": "ewam_doctor_efficiency48/study_plan.py",
+    "original_sha256": "a1c59212a87e88e4901f0845272c27ae01fc64ae309a985fcc60457d4cf82d51",
+    "original_object": "provenance/original_sources/a1c59212a87e88e4901f0845272c27ae01fc64ae309a985fcc60457d4cf82d51.py",
+    "export": "projects/ewam_doctor_efficiency48/study_plan.py",
+    "export_sha256": "6740da8f0603408516761a72a5a96b755f736d21f26ed2891cfd0a4357de5a92",
+    "changes": "PROJECTS_ROOT portability import/path resolution; original content retained separately"
+  },
+  {
+    "original": "ewam_doctor_efficiency48/test_doctor.py",
+    "original_sha256": "3eee860c2ac91fc070d1e56d0b2a16958fe647728772a86ca8bea272554cecae",
+    "original_object": "provenance/original_sources/3eee860c2ac91fc070d1e56d0b2a16958fe647728772a86ca8bea272554cecae.py",
+    "export": "projects/ewam_doctor_efficiency48/test_doctor.py",
+    "export_sha256": "c8225e517b1c53011e48bd37839b623af73e1d0b6c59511450e86e2c108b5164",
+    "changes": "PROJECTS_ROOT portability import/path resolution; original content retained separately"
+  },
+  {
+    "original": "ewam_doctor_efficiency48/test_efficiency.py",
+    "original_sha256": "0a875a06fb11e7d5abfa3764f98c181ec6f61f74ca3030410052f0a92944407a",
+    "original_object": "provenance/original_sources/0a875a06fb11e7d5abfa3764f98c181ec6f61f74ca3030410052f0a92944407a.py",
+    "export": "projects/ewam_doctor_efficiency48/test_efficiency.py",
+    "export_sha256": "4d27c73c858ec11d480b3621a0817c287da0c721e6160ddbf7c0f23677784811",
+    "changes": "PROJECTS_ROOT portability import/path resolution; original content retained separately"
+  },
+  {
+    "original": "ewam_doctor_efficiency48/test_plan.py",
+    "original_sha256": "47b0677abf03f159acd6e9235fc839634cadd7a44acadf1aac70f5dadeed2478",
+    "original_object": "provenance/original_sources/47b0677abf03f159acd6e9235fc839634cadd7a44acadf1aac70f5dadeed2478.py",
+    "export": "projects/ewam_doctor_efficiency48/test_plan.py",
+    "export_sha256": "e39c972d4a44ce464b1f80251cc002635029b3a1f16754e648776eadb2ba1378",
+    "changes": "PROJECTS_ROOT portability import/path resolution; original content retained separately"
+  },
+  {
+    "original": "ewam_window_parallel24/doctor_robot.py",
+    "original_sha256": "3ed5a3757fdaa2adb270e72869436a74f67ae141afe85e709dc8c8ba77b701fa",
+    "original_object": "provenance/original_sources/3ed5a3757fdaa2adb270e72869436a74f67ae141afe85e709dc8c8ba77b701fa.py",
+    "export": "projects/ewam_window_parallel24/doctor_robot.py",
+    "export_sha256": "77f33811bbe2c67c9587e8b7a55e0ee9e12155166cc0311662f9d59c823e22ad",
+    "changes": "PROJECTS_ROOT portability import/path resolution; original content retained separately"
+  },
+  {
+    "original": "ewam_window_parallel24/hybrid_robot.py",
+    "original_sha256": "0e880238b8e943d3c93607c84580ce9e3d97440325c10bbb358a27c9867e5032",
+    "original_object": "provenance/original_sources/0e880238b8e943d3c93607c84580ce9e3d97440325c10bbb358a27c9867e5032.py",
+    "export": "projects/ewam_window_parallel24/hybrid_robot.py",
+    "export_sha256": "4aa69ace1efc14644c6527888e68e15b889fc236b04b2e4d08997383150f5923",
+    "changes": "PROJECTS_ROOT portability import/path resolution; original content retained separately"
+  },
+  {
+    "original": "ewam_window_parallel24/learning.py",
+    "original_sha256": "478108205a24d62085c7772d479d281c7512a3a62c02520c4aaf35c1b6c5cff5",
+    "original_object": "provenance/original_sources/478108205a24d62085c7772d479d281c7512a3a62c02520c4aaf35c1b6c5cff5.py",
+    "export": "projects/ewam_window_parallel24/learning.py",
+    "export_sha256": "eb8efeb327965bd1b98118748eb9dc62899e63715a864b03b5b30cbf9abf1a5a",
+    "changes": "PROJECTS_ROOT portability import/path resolution; original content retained separately"
+  },
+  {
+    "original": "ewam_window_parallel24/recording.py",
+    "original_sha256": "ddc12a799c3ecf919bb44b83e939c7541bbb96b704de79ae823f07b088c2d4ac",
+    "original_object": "provenance/original_sources/ddc12a799c3ecf919bb44b83e939c7541bbb96b704de79ae823f07b088c2d4ac.py",
+    "export": "projects/ewam_window_parallel24/recording.py",
+    "export_sha256": "0392a867dae7b89317eadaead7f255f26d00b7896441b9525d31766af9e5be00",
+    "changes": "PROJECTS_ROOT portability import/path resolution; original content retained separately"
+  },
+  {
+    "original": "ewam_window_parallel24/window_control.py",
+    "original_sha256": "9b069c7adfbd1b095c73a317d5021508a8f674a9356487595de167f70936799e",
+    "original_object": "provenance/original_sources/9b069c7adfbd1b095c73a317d5021508a8f674a9356487595de167f70936799e.py",
+    "export": "projects/ewam_window_parallel24/window_control.py",
+    "export_sha256": "be03cf88fb988dbd2bec4e10261609b11065088ad4f82fa6b7a3bd93ccf173a4",
+    "changes": "PROJECTS_ROOT portability import/path resolution; original content retained separately"
+  },
+  {
+    "original": "ewam_window_parallel24/window_protocol_tests.py",
+    "original_sha256": "2681ddb38a2ec5fb89458cc08b745b3a576cb313fe075c12b37dd71aaaa5a69b",
+    "original_object": "provenance/original_sources/2681ddb38a2ec5fb89458cc08b745b3a576cb313fe075c12b37dd71aaaa5a69b.py",
+    "export": "projects/ewam_window_parallel24/window_protocol_tests.py",
+    "export_sha256": "bc042ec2f210da38251bca08f4774e0278d89f29b3dc6aa010fac38d9506276c",
+    "changes": "PROJECTS_ROOT portability import/path resolution; original content retained separately"
+  },
+  {
+    "original": "ewam_window_parallel24/window_session.py",
+    "original_sha256": "ce958d0aacf0e5bbe06a96ea3d64cf7a202811302c8dbe89146b837076bdfa2e",
+    "original_object": "provenance/original_sources/ce958d0aacf0e5bbe06a96ea3d64cf7a202811302c8dbe89146b837076bdfa2e.py",
+    "export": "projects/ewam_window_parallel24/window_session.py",
+    "export_sha256": "8bbb9d54e24a5a882a44eeda94498e22ef5b676f554d61df422a50aec52ae3bb",
+    "changes": "PROJECTS_ROOT portability import/path resolution; original content retained separately"
+  }
+]

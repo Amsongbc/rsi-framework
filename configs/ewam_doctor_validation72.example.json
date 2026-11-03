@@ -1,0 +1,123 @@
+{
+  "schema": 1,
+  "status": "predeclared",
+  "mode": "hybrid_only",
+  "api": {
+    "base_url": "https://api.openai.com/v1",
+    "key_file": "${API_KEY_FILE}",
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "high",
+    "max_output_tokens": 8192,
+    "store": false,
+    "parallel_tool_calls": false,
+    "nudges": 20,
+    "request_timeout_s": 900,
+    "trust_env": true
+  },
+  "tasks": [
+    "stack_blocks",
+    "classify_objects",
+    "insert_key"
+  ],
+  "eval_seeds": [
+    0,
+    1,
+    2
+  ],
+  "layouts": [
+    2,
+    3,
+    4,
+    5
+  ],
+  "episodes": 72,
+  "max_turns": 100,
+  "budget_s": 5400,
+  "images": "on-demand",
+  "feedback": "pure",
+  "guides": false,
+  "source_root": "${PROJECTS_ROOT}/RoboDojo",
+  "runtime_root": "${PROJECTS_ROOT}/ewam_comparison",
+  "gpus": {
+    "ewam": 0,
+    "simulator": 2,
+    "sam3": 1
+  },
+  "ewam": {
+    "checkpoint_sha256": "03509de1c598d5f85d78618cc0577b27b6c350511c8f39aaea3703586f6a3ca0",
+    "action_stride": 3,
+    "model_actions_per_chunk": 16,
+    "chunks_per_call_max": 1,
+    "num_inference_steps": 10,
+    "scene_prefix": ""
+  },
+  "scoring": {
+    "verdict": "Official RoboDojo client per-episode only",
+    "display_scale": 100,
+    "aggregate": "Equal-weight selected three-task means; not a full benchmark leaderboard"
+  },
+  "retention": {
+    "all_formal_episodes_including_failures": true,
+    "api_requests_and_responses": true,
+    "images_as_content_addressed_files": true,
+    "api_usage_and_latency_and_errors": true,
+    "all_native_actions_and_robot_states": true,
+    "three_camera_native_action_videos": true,
+    "all_ewam_plans_and_executed_prefixes": true,
+    "all_cells_and_primitive_ledger": true,
+    "official_raw_results": true,
+    "exact_source_and_config_hashes": true,
+    "secrets_in_outputs": false,
+    "sam3_inputs_outputs_and_lossless_masks": true
+  },
+  "fixed_rules": [
+    "No new warmup or learning; frozen prior warmup experience reused byte-for-byte",
+    "Primary data use only new layouts2-5 with official eval_seeds0/1/2; old pilot is separate",
+    "Both arms use identical task/seed/layout and original native budgets",
+    "Frozen gpt-6.1-sol/high settings, controller code and EWAM weights",
+    "All valid failures retained; only infrastructure-invalid attempts may be retried after inspection",
+    "Each pair runs simultaneously on independent EWAM services; arms rotate across symmetric lanes",
+    "Per lane simulator and SAM share one H20; the two lanes have separate GPUs and model instances",
+    "No test outcome feedback into policy, memory, routing or controller",
+    "Fixed sample size72; no outcome-based early stopping or scene selection",
+    "No task/reward/observation changes or hidden object state access"
+  ],
+  "service_root": null,
+  "implementation_differences_from_colleague": [
+    "Learned EWAM execution method added to the original RGB robot API and generated docstring reference",
+    "H20 GPUs and separate simulator / SAM3 / EWAM devices rather than colleague RTX4090 GPU3",
+    "Official OpenAI endpoint rather than colleague OpenAI-compatible gateway",
+    "Python3.10 EWAM runtime; Starlette version chosen for that interpreter, all installed versions retained",
+    "An additional seed2 layout0 episode per task; first two seeds remain 0 and 1",
+    "Additional host-only per-native-action state/action recording and three-camera videos, not additional policy observations"
+  ],
+  "cohort_id": "ewam_doctor_heldout_72_v1",
+  "execution_strategy": "robodoctor_inspired_proposal_gate_and_frozen_experience",
+  "prior_variant": {
+    "path": "${PROJECTS_ROOT}/ewam_doctor_integration",
+    "purpose": "Frozen controller and warmup memory source; pilot scores excluded from primary analysis"
+  },
+  "doctor": {
+    "enabled": true,
+    "phase": "hybrid",
+    "frozen_memory": null
+  },
+  "lanes": {
+    "A": {
+      "gpus": {
+        "ewam": 0,
+        "simulator": 6,
+        "sam3": 6
+      },
+      "service_root": "${PROJECTS_ROOT}/ewam_doctor_validation72/services/A"
+    },
+    "B": {
+      "gpus": {
+        "ewam": 5,
+        "simulator": 7,
+        "sam3": 7
+      },
+      "service_root": "${PROJECTS_ROOT}/ewam_doctor_validation72/services/B"
+    }
+  }
+}

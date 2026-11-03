@@ -1,0 +1,7 @@
+{
+  "env": "robodojo",
+  "vla": "ewam",
+  "controller": "api_responses",
+  "protocol": "doctor",
+  "study": "integration"
+}

@@ -1,0 +1,6 @@
+# Extension dependencies only; upstream robotics/Isaac/EWAM runtime is separate.
+numpy
+pillow
+opencv-python
+httpx
+# API transport uses httpx directly; OpenAI SDK is not required by that module.

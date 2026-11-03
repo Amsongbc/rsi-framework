@@ -1,0 +1,13 @@
+numpy==1.26.0
+torch==2.7.0
+torchvision==0.22.0
+torchaudio==2.7.0
+packaging==23.0
+typing_extensions==4.12.2
+filelock==3.13.1
+websockets==12.0
+scipy==1.15.3
+starlette==0.45.3
+warp-lang==1.11.0
+pillow==11.3.0
+onnx>=1.18,<1.22

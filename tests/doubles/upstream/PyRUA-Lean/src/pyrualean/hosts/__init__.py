@@ -1,0 +1,1 @@
+"""Host adapters (TEST DOUBLE)."""

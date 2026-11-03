@@ -1,0 +1,58 @@
+{
+  "extends": "robodojo_ewam_agent_api.json",
+  "memory": "learn",
+  "memory_options": {
+    "store": "${MEMORY_STORE}",
+    "promotion": {
+      "min_cases": 3,
+      "min_success_delta": 0,
+      "min_score_delta": 0.0,
+      "no_lost_successes": true
+    }
+  },
+  "learning": {
+    "enabled": true,
+    "dataset": {
+      "block": "native_samples",
+      "options": {
+        "selection": "success_only"
+      }
+    },
+    "trainer": {
+      "block": "external_command",
+      "options": {
+        "command": [
+          "${TRAINER_PYTHON}",
+          "${TRAINER_SCRIPT}",
+          "--samples",
+          "{samples}",
+          "--base",
+          "{base_checkpoint}",
+          "--out",
+          "{output_dir}"
+        ],
+        "checkpoint": "checkpoint.pt"
+      }
+    },
+    "evaluation": {
+      "rule": {
+        "min_cases": 6,
+        "min_success_delta": 0,
+        "min_score_delta": 0.0,
+        "no_lost_successes": true
+      }
+    },
+    "release": {
+      "serve": {
+        "command": [
+          "${SERVE_PYTHON}",
+          "${SERVE_SCRIPT}",
+          "--root",
+          "{root}",
+          "--checkpoint",
+          "{checkpoint}"
+        ]
+      }
+    }
+  }
+}

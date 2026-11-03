@@ -1,0 +1,141 @@
+{
+  "schema": 1,
+  "status": "predeclared",
+  "mode": "hybrid_only",
+  "api": {
+    "base_url": "https://api.openai.com/v1",
+    "key_file": "${API_KEY_FILE}",
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "high",
+    "max_output_tokens": 8192,
+    "store": false,
+    "parallel_tool_calls": false,
+    "nudges": 20,
+    "request_timeout_s": 900,
+    "trust_env": true
+  },
+  "tasks": [
+    "classify_objects"
+  ],
+  "eval_seeds": [
+    0,
+    1,
+    2
+  ],
+  "layouts": [
+    6,
+    7,
+    8,
+    9
+  ],
+  "episodes": 48,
+  "max_turns": 100,
+  "budget_s": 5400,
+  "images": "on-demand",
+  "feedback": "pure",
+  "guides": false,
+  "source_root": "${PROJECTS_ROOT}/RoboDojo",
+  "runtime_root": "${PROJECTS_ROOT}/ewam_comparison",
+  "gpus": {
+    "ewam": 2,
+    "simulator": 0,
+    "sam3": 0
+  },
+  "ewam": {
+    "checkpoint_sha256": "03509de1c598d5f85d78618cc0577b27b6c350511c8f39aaea3703586f6a3ca0",
+    "action_stride": 3,
+    "model_actions_per_chunk": 16,
+    "chunks_per_call_max": 1,
+    "num_inference_steps": 10,
+    "scene_prefix": ""
+  },
+  "scoring": {
+    "verdict": "Official RoboDojo client per-episode only",
+    "display_scale": 100,
+    "aggregate": "Equal-weight12 matched classify_objects cases per arm; not a benchmark leaderboard"
+  },
+  "retention": {
+    "all_formal_episodes_including_failures": true,
+    "api_requests_and_responses": true,
+    "images_as_content_addressed_files": true,
+    "api_usage_and_latency_and_errors": true,
+    "all_native_actions_and_robot_states": true,
+    "three_camera_native_action_videos": true,
+    "all_ewam_plans_and_executed_prefixes": true,
+    "all_cells_and_primitive_ledger": true,
+    "official_raw_results": true,
+    "exact_source_and_config_hashes": true,
+    "secrets_in_outputs": false,
+    "sam3_inputs_outputs_and_lossless_masks": true
+  },
+  "fixed_rules": [
+    "4-arm2x2factorial: sparse proposal supervision x actual Responses history compaction",
+    "48fixed episodes, each arm12; classify_objects only, seeds0/1/2 and new layouts6/7/8/9",
+    "All four arms use frozen prior warmup memory, model and original task budgets",
+    "No evaluation feedback into policies or memory; no changes after declaration",
+    "All valid failures retained; infrastructure-invalid attempts preserved for inspection",
+    "Two independent EWAM lanes with balanced arm/lane/order assignments",
+    "Official task scoring, RGB-only observations, unchanged PyRUA primitives"
+  ],
+  "service_root": null,
+  "implementation_differences_from_colleague": [
+    "This study compares four versions of the doctor controller, not a new colleague or pure-EWAM arm",
+    "Sparse factor replaces GPT pre-execution FK-preview round trip with host FK/finite screen; original primitives and post-execution RGB gate retained",
+    "Compaction factor actually prunes older API items after a server compaction item; unchanged static instructions reattached",
+    "New layouts6-9 and official eval_seeds0/1/2,12cases per arm; gpt-6.1-sol/high held fixed",
+    "Two H20 EWAM instances, each on a dedicated device; separate H20 simulator/SAM devices, arm/lane/wave balanced"
+  ],
+  "cohort_id": "ewam_doctor_efficiency_factorial48_v1",
+  "execution_strategy": "four_arm_sparse_x_compaction_ablation",
+  "prior_variant": {
+    "path": "${PROJECTS_ROOT}/ewam_doctor_validation72",
+    "purpose": "Development evidence and exact frozen warmup memory source; prior episodes excluded from new comparisons"
+  },
+  "doctor": {
+    "enabled": true,
+    "phase": "hybrid",
+    "frozen_memory": null
+  },
+  "lanes": {
+    "A": {
+      "gpus": {
+        "ewam": 2,
+        "simulator": 0,
+        "sam3": 0
+      },
+      "service_root": "${PROJECTS_ROOT}/ewam_doctor_efficiency48/services/A"
+    },
+    "B": {
+      "gpus": {
+        "ewam": 1,
+        "simulator": 0,
+        "sam3": 0
+      },
+      "service_root": "${PROJECTS_ROOT}/ewam_doctor_efficiency48/services/B"
+    }
+  },
+  "efficiency": {
+    "sparse_supervision": false,
+    "context_compaction": false,
+    "compact_threshold": 32768
+  },
+  "arms": {
+    "original": {
+      "sparse_supervision": false,
+      "context_compaction": false
+    },
+    "sparse": {
+      "sparse_supervision": true,
+      "context_compaction": false
+    },
+    "compact": {
+      "sparse_supervision": false,
+      "context_compaction": true
+    },
+    "combined": {
+      "sparse_supervision": true,
+      "context_compaction": true
+    }
+  },
+  "resource_layout_note": "Both simulator/SAM processes share GPU0, with summed admission53248MiB. Independent EWAM services remain GPU2 and1. Timing is specific to this shared-resource configuration."
+}

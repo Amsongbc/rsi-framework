@@ -1,0 +1,9 @@
+{
+  "files_scanned": 118,
+  "python_files_compiled": 98,
+  "total_bytes": 796881,
+  "actual_key_comparison": true,
+  "issues": [],
+  "passed": true,
+  "limits": "Static patterns and optional known-key equality are evidence, not proof against all possible unknown secrets. No runs/logs/images/API records were included by allowlist."
+}

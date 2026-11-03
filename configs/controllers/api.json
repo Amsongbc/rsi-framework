@@ -1,0 +1,11 @@
+{
+  "description": "OpenAI-compatible endpoint; nothing is preset, set the three variables.",
+  "llm": {
+    "base_url": "${LLM_BASE_URL}",
+    "model": "${LLM_MODEL}",
+    "key_file": "${LLM_KEY_FILE}"
+  },
+  "policy_options": {
+    "max_turns": 100
+  }
+}

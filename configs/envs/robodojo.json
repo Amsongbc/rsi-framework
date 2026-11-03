@@ -1,0 +1,17 @@
+{
+  "description": "RoboDojo ARX X5 defaults. Change the task here; command-line flags override single values.",
+  "task": "classify_objects",
+  "eval_seed": 0,
+  "layout": 10,
+  "options": {
+    "simulator_gpu": 2,
+    "perception_gpu": 1
+  },
+  "original": {
+    "window_config": "${REPO_ROOT}/configs/ewam_window_parallel24.local.json",
+    "lane": "A",
+    "integration_config": "${REPO_ROOT}/configs/ewam_doctor_integration.local.json",
+    "validation72_config": "${REPO_ROOT}/configs/ewam_doctor_validation72.local.json",
+    "efficiency48_config": "${REPO_ROOT}/configs/ewam_doctor_efficiency48.local.json"
+  }
+}

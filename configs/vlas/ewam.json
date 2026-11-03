@@ -1,0 +1,18 @@
+{
+  "description": "EWAM service. Original runs start it at the needed root when none is running there (projects/ewam_comparison/ewam_service.py, unchanged) and stop it afterwards.",
+  "options": {
+    "service_root": "${PROJECTS_ROOT}/ewam_comparison/service"
+  },
+  "service": {
+    "command": [
+      "{python}",
+      "{projects}/ewam_comparison/ewam_service.py",
+      "--root",
+      "{root}",
+      "--gpu",
+      "{gpu}"
+    ],
+    "gpu": 0,
+    "start_timeout_s": 1800
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "env": "robodojo",
+  "vla": "ewam",
+  "controller": "api",
+  "memory": "frozen",
+  "memory_options": {
+    "snapshot": "${MEMORY_SNAPSHOT}"
+  }
+}

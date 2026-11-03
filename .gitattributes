@@ -1,0 +1,2 @@
+# Exact source snapshots intentionally retain original terminal blank lines.
+provenance/original_sources/*.py whitespace=-blank-at-eof

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "cohort_id": "window_direct_classification24_v1",
+  "tasks": [
+    "classify_objects"
+  ],
+  "layouts": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "eval_seeds": [
+    0,
+    1,
+    2
+  ],
+  "variants": [
+    "full",
+    "sparse"
+  ],
+  "episodes": 24,
+  "budget_s": 5400,
+  "max_cells": 100,
+  "source_root": "${PROJECTS_ROOT}/RoboDojo",
+  "planner": "current-window AI",
+  "model_identity": "unverified exact window model; not claimed identical to API gpt-6.1-sol/high",
+  "api_requests": 0,
+  "token_usage": null,
+  "doctor": {
+    "enabled": true,
+    "phase": "hybrid",
+    "frozen_memory": null
+  },
+  "efficiency": {
+    "context_compaction": false
+  },
+  "lanes": {
+    "A": {
+      "gpu": 2,
+      "service_root": "${PROJECTS_ROOT}/ewam_doctor_efficiency48/services/A"
+    },
+    "B": {
+      "gpu": 1,
+      "service_root": "${PROJECTS_ROOT}/ewam_doctor_efficiency48/services/B"
+    },
+    "C": {
+      "gpu": 0,
+      "service_root": "${PROJECTS_ROOT}/ewam_window_parallel24/services/C"
+    }
+  },
+  "fixed_rules": [
+    "Official scoring and original action budgets, RGB-only, unchanged PyRUA primitives",
+    "Both variants require meaningful EWAM first; full requires preview review, sparse host FK screen",
+    "Fresh visual acknowledgement after EWAM before subsequent motion",
+    "New layouts10-13; API history-compaction factor is not tested in this runtime",
+    "No experiment HTTP API calls or API key reads; window token usage unavailable",
+    "Frozen task experience and protocol; current-window contexts may carry prior high-level knowledge, results exploratory and separate from API cohort",
+    "All valid failures retained; technical interruptions saved separately"
+  ]
+}
